@@ -1,0 +1,30 @@
+{
+  "history": [
+    {
+      "type": "education", //certificate ... //publication
+      "name": "Project Name",
+      "dateStart": "yyyy-mm-dd",
+      "dateEnd": "yyyy-mm-dd",
+      "description": "A simple game",
+      "screenshots": ["url1.jpg", "url2.jpg", "url3.jpg"],
+      "demoUrl": "projectUrl",
+      "otherUrls" : ["github.com"]  
+    }
+  ]
+}
+
+//cases:
+/*
+    project
+    education
+    sertificate
+
+*/
+
+    {
+      "name": "Project Name",
+      "description": "A simple game",
+      "screenshots": ["url1.jpg", "url2.jpg", "url3.jpg"],
+      "demoUrl": "projectUrl",
+      "otherUrls" : ["github.com"]  
+    }

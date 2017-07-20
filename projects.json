@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "name": "Project Name",
+      "description": "A simple game",
+      "screenshots": ["url1.jpg", "url2.jpg", "url3.jpg"],
+      "demoUrl": "projectUrl",
+      "otherUrls" : ["github.com"]  
+    },
+    {
+      "name": "Project Name",
+      "description": "A simple game",
+      "screenshots": ["url1.jpg", "url2.jpg", "url3.jpg"],
+      "demoUrl": "projectUrl",
+      "otherUrls" : ["github.com"]  
+    }
+  ]
+}
