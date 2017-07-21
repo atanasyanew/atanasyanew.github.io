@@ -99,7 +99,7 @@ function renderPortfolioItems(obj) {
     if (projects != "" && projects.length > 0) {
 
         for (i = 0; i < projects.length; i++) {
-            portfolioCards += "<div class=\"col-sm-6 col-md-4\">";
+            portfolioCards += "<div class=\"col-md-4\">";
             portfolioCards += "<div class=\"thumbnail\">";
             portfolioCards += "<div class=\"portfolio-item\">";
             portfolioCards += "<div class=\"hover-bg\">";
