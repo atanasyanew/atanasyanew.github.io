@@ -104,7 +104,7 @@ function renderPortfolioItems(obj) {
             portfolioCards += "<div class=\"portfolio-item\">";
             portfolioCards += "<div class=\"hover-bg\">";
 
-            portfolioCards += "<a href=\"img/portfolio/" + projects[i].image + "\" title=\"" + projects[i].title + "\" data-lightbox-gallery=\"gallery\">";
+            portfolioCards += "<a href=\"images/portfolio/" + projects[i].image + "\" title=\"" + projects[i].title + "\" data-lightbox-gallery=\"gallery\">";
             portfolioCards += "<div class=\"hover-text\">";
             portfolioCards += "<h4>" + projects[i].title + "</h4>";
             portfolioCards += "</div>";
