@@ -49,6 +49,10 @@
     <!--google charts-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
+    <!--    graph js  -->
+    <link rel="stylesheet" type="text/css" href="stylesheets/gitgraph.css" />
+    <script src="scripts/gitgraph.js"></script>
+
 
 </head>
 
@@ -85,10 +89,7 @@
                         </li>
                         <li> <a class="page-scroll" href="#about">About</a> </li>
                         <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
-                        <li> <a class="page-scroll" href="#education">Education</a> </li>
-                        <li> <a class="page-scroll" href="#experience">Experience</a> </li>
-                        <li> <a class="page-scroll" href="#certificates">Certificates</a> </li>
-                        <li> <a class="page-scroll" href="#certificates">My Git Tree</a> </li>
+                        <li> <a class="page-scroll" href="#achievements">Achievements</a> </li>
                         <li> <a class="page-scroll" href="#contact">Contact</a> </li>
                     </ul>
                 </div>
@@ -109,7 +110,8 @@
                     <div class="about-text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
-                        <a href="#portfolio" class="btn btn-default btn-lg page-scroll">My Portfolio</a> </div>
+                        <a href="#portfolio" class="btn btn-default btn-lg page-scroll">My Portfolio</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -118,33 +120,39 @@
     <!-- Portfolio Section -->
     <div id="portfolio">
         <div class="container">
+
             <div class="section-title text-center center">
                 <h2>Portfolio</h2>
                 <hr>
             </div>
-
             <div class="row">
-                <div id="portfolioItems" class="portfolio-items isotope">
+                <div class="col-md-12">
+                    <div id="portfolioItems" class="portfolio-items isotope"></div>
+                </div>
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="about-text center">
+                        <a href="#achievements" class="btn btn-default btn-lg page-scroll">My Portfolio</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Education Section -->
-    <div id="education">
+    <!-- Achievements Section -->
+    <div id="achievements">
         <div class="container">
             <div class="section-title text-center center">
-                <h2>Education</h2>
+                <h2>Achievements</h2>
                 <hr>
             </div>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <canvas id="educationChart" width="400" height="400"></canvas>
-                    <div id="chart_div"></div>
+                    <p>TO DO: bubble chart - Education, Experience, Certificates
+                    </p>
+                    <canvas id="educationChart"></canvas>
                     <div class="about-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
-                        <a href="#contact" class="btn btn-default btn-lg page-scroll">Contact me</a> </div>
+                        <a href="#contact" class="btn btn-default btn-lg page-scroll">Contact me</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -161,36 +169,35 @@
 
                 <div class="social">
                     <ul>
-                        <li>
-                            <i class="fa fa-envelope-o" aria-hidden="true"> atanas.yanew@gmail.com</i>
+                        <li><a href="mailto:atanas.yanew@gmail.com" target="_top"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/atanasyanew" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"> linkedin.com/in/atanasyanew</i></a>
+                            <a href="https://www.linkedin.com/in/atanasyanew" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
                         <li>
-                            <a href="https://github.com/atanasyanew" target="_blank"><i class="fa fa-github" aria-hidden="true"> github.com/atanasyanew</i></a>
+                            <a href="https://github.com/atanasyanew" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
-                
+
             </div>
         </div>
     </div>
 
     <!-- Footer Section -->
-    <div id="footer">
+    <footer>
         <div class="container text-center">
-            <div class="fnav">
+            <div class="">
                 <p>Copyright &copy; 2017 Atanas Yanev</p>
             </div>
         </div>
-    </div>
+    </footer>
 
-    
-    
-    
-    
-    
+
+
+
+
+
     <script type="text/javascript" src="scripts/nivo-lightbox.js"></script>
 
     <script type="text/javascript" src="scripts/portfolio.js"></script>
@@ -204,7 +211,7 @@
 
     <script type="text/javascript" src="scripts/main.js"></script>
     <script type="text/javascript" src="scripts/edu_chart.js"></script>
-
+    <!--    <script src="scripts/mygraph.js"></script>-->
 
 
 
