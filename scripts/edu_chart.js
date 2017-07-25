@@ -60,67 +60,80 @@
 
     //     chart js education chart
     var ctx1 = document.getElementById("educationChart").getContext("2d");
-Chart.defaults.global.defaultFontColor = '#fff';
-var data = {
-        datasets: [
-            {
-                label: 'First Dataset',
-                data: [
-                    {
-                        x: 28,
-                        y: 30,
-                        r: 15,
-                        label:"bla bla bla"
+    Chart.defaults.global.defaultFontColor = '#fff';
+
+
+
+    //var data = {
+    //        datasets: [
+    //            {
+    //                label: 'First Dataset',
+    //                data: [
+    //                    {
+    //                        x: 28,
+    //                        y: 30,
+    //                        r: 15,
+    //                        label:"bla bla bla"
+    //                    },
+    //                    {
+    //                        x: 40,
+    //                        y: 10,
+    //                        r: 10
+    //                    }
+    //                ],
+    //                backgroundColor:"#FF6384",
+    //                hoverBackgroundColor: "#FF6384",
+    //            }
+    //        ]
+    //    };
+    //    var myBubbleChart = new Chart(ctx1,{
+    //        type: 'bubble',
+    //        data: data,
+    //options: {
+    //
+    //      }
+    //    });
+    var education = new Image();
+    //sun.src = 'https://i.imgur.com/yDYW1I7.png';
+    education.height = 50;
+    education.width = 50;
+    education.src = 'images/others/graduation.png';
+
+
+    var scatterChart = new Chart(ctx1, {
+        type: 'line',
+        data: {
+            datasets: [{
+
+                    label: 'Education',
+                    showLine: false,
+                    fill: false,
+                    // pointStyle: education,
+                    backgroundColor: "rgba(246,156,85,0.5)",
+                    borderColor: "rgba(246,156,85,0.9)",
+                    borderWidth: 1.2,
+                    pointRadius: 10,
+                    pointHoverRadius: 12,
+
+                    data: [{
+                            x: 2006,
+                            y: 15,
+                            label: "hello world"
+                    }, {
+                            x: 2010,
+                            y: 19,
+                            label: "hello world 2"
                     },
-                    {
-                        x: 40,
-                        y: 10,
-                        r: 10
-                    }
-                ],
-                backgroundColor:"#FF6384",
-                hoverBackgroundColor: "#FF6384",
-            }
-        ]
-    };
-    var myBubbleChart = new Chart(ctx1,{
-        type: 'bubble',
-        data: data,
-options: {
-
-      }
-    });
-
-//    var scatterChart = new Chart(ctx1, {
-//        type: 'bubble',
-//        data: {
-//            datasets: [{
-//
-//                    label: 'Proffesional Technical School IVAN Rainov - Yambol age: ',
-//                    backgroundColor: "rgba(246,156,85,1)",
-////                    hoverBackgroundColor: "rgba(50,90,100,0)",
-//                    fill: false,
-//                    borderWidth: 5,
-//                    pointRadius: 8,
-//                    steppedLine: true,
-//                    data: [{
-//                        x: 2006,
-//                        y: 15
-//                    }, {
-//                        x: 2010,
-//                        y: 19,
-//                        label: "hello world"
-//                    },
-//                          {
-//                        x: 2012,
-//                        y: 22,
-//                        label: "hello world 22"
-//                    }]
-//                },
+                        {
+                            x: 2012,
+                            y: 22,
+                            label: "hello world 3"
+                    }]
+                },
 //                {
 //
 //                    label: 'Bachlor degree Electrical eng',
-////                    backgroundColor: "rgba(246,156,85,1)",
+//                    //                    backgroundColor: "rgba(246,156,85,1)",
 //                    fill: false,
 //                    borderWidth: 5,
 //                    pointRadius: 8,
@@ -149,86 +162,108 @@ options: {
 //                        y: 25
 //                    }]
 //                },
-//                {
-//
-//                    label: 'Sweden',
-//                    backgroundColor: "rgba(246,156,85,1)",
-//                    fill: false,
-//                    borderWidth: 5,
-//                    pointRadius: 8,
-//                    steppedLine: true,
-//                    data: [{
-//                        x: 2017,
-//                        y: 26
-//                    }, {
-//                        x: 2017,
-//                        y: 26
-//                    }]
-//                },
-//                {
-//
-//                    label: 'PHD',
-//                    backgroundColor: "rgba(246,156,85,1)",
-//                    fill: false,
-//                    borderWidth: 5,
-//                    pointRadius: 8,
-//                    steppedLine: true,
-//                    data: [
-//
-//                        {
-//                            label: 'bla',
-//                            x: 2016,
-//                            y: 25
-//                    }, {
-//                            x: 2019,
-//                            y: 28
-//                    }]
-//                },
-//
-//            ]
-//        },
+
+            ]
+        },
 
 
-        
-//        options: {
-//
-//
-//        if (element.length > 0) {
-//
-//            var data = this.config.data.datasets[element[0]._datasetIndex].data[element[0]._index];
-//
-//            console.log(data);
-//            // You can have the following for instance :
-//            // data -> { x:40, y:10, r:10, symbol:"$", bond_type:"james" }
-//        }
-//    },
-//            
-//            legend: {
-//                display: false
+        options: {
+            responsive: true,
+            animation: {
+                duration: 3000,
+            },
+
+
+            //        if (element.length > 0) {
+            //
+            //            var data = this.config.data.datasets[element[0]._datasetIndex].data[element[0]._index];
+            //
+            //            console.log(data);
+            //            // You can have the following for instance :
+            //            // data -> { x:40, y:10, r:10, symbol:"$", bond_type:"james" }
+            //        },
+            //    },
+            tooltips: {
+                mode: 'single', // this is the Chart.js default, no need to set
+                //                callbacks: {
+                //                    label: function (tooltipItems, data) {
+                //
+                //                        var tooltipBox = "";
+                //                        // main label
+                //                        // datasets[tooltipItems.datasetIndex].label
+                //                        //data for the point
+                //                        var customData = data.datasets[tooltipItems.datasetIndex].data[tooltipItems.index];
+                //                        tooltipBox += ' |customData ' + customData.label;
+                //                        // console.log(data);
+                //                        // console.log(tooltipItems);
+                //                        return tooltipBox;
+                //
+                //                    }
+                //                }
+
+                callbacks: {
+                    //main label
+                    label: function (tooltipItems, data) {
+                        tooltipBox = data.datasets[tooltipItems.datasetIndex].label;
+                        return tooltipBox;
+                    },
+                    // append texts
+                    afterBody: function (data) {
+                        var multistringText = ['first string'];
+                        // do some stuff
+                        multistringText.push('another string');
+
+                        return multistringText;
+                    }
+                }
+            },
+
+
+//            title : {
+//                display: true,
+//                text: "my chart",
+//                fontSize: 15
 //            },
-//            scales: {
-//                xAxes: [{
-//                    type: 'linear',
-//                    position: 'bottom',
-//                    ticks: {
-//                        //                        beginAtzero :true,
-//                        stepSize: 1
-//                    }
-//                }],
-//                yAxes: [{
-//                    scaleLabel: {
-//                        display: false
-//                    },
-//                    ticks: {
-//                        //                        beginAtZero :true,
-//                        stepSize: 1,
-//                        max: 30,
-//                        min: 10
-//                    }
-//                }]
-//            }
-//        }
-//    });
+            legend: {
+                display: true,
+                position: "right",
+                usePointStyle: true,
+//                fullWidth: true
+                labels : {
+                    usePointStyle: true,
+                }
+            },
+            scales: {
+                xAxes: [{
+                    display: true,
+                    type: 'linear',
+                    position: 'bottom',
+                    ticks: {
+                        stepSize: 1
+                    },
+                    gridLines: {
+                                display: false
+                            }
+                }],
+                yAxes: [{
+                    scaleLabel: {
+                        display: true
+                    },
+                    ticks: {
+                        stepSize: 1,
+                        suggestedMin: 15,
+                        suggestedMax: 30,
+                    },
+                    gridLines: {
+                                display: false
+                            }
+                }]
+            }
+        }
+    });
+
+
+
 
     //var ctx1 = document.getElementById("educationChart").getContext("2d");
     //
