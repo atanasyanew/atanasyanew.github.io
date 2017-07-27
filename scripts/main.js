@@ -62,11 +62,8 @@ function utilities() {
 
     }())
 };
-utilities();
 
 // render portfolio projects
-var portfolioItems = document.getElementById("portfolioItems");
-
 function renderPortfolioItems(obj) {
 
     let projects = obj.projects;
@@ -110,9 +107,9 @@ function renderPortfolioItems(obj) {
     } else {
         portfolioCards += "<p>There is no projects to display</p>"
     }
-    portfolioItems.innerHTML = portfolioCards
+    document.getElementById("portfolioItems").innerHTML = portfolioCards
 };
-renderPortfolioItems(portfolio);
+
 
 
 /*
@@ -311,8 +308,8 @@ var achievementsChart = new Chart(ctx, {
             duration: 3000,
         },
         title: {
-//            display: true,
-//            text: "Age of Time"
+            //            display: true,
+            //            text: "Age of Time"
         },
         tooltips: {
             mode: 'single', // this is the Chart.js default, no need to set
@@ -361,7 +358,7 @@ var achievementsChart = new Chart(ctx, {
                             // authors: "",
                             multistringText.push(customDataObj.title);
                             multistringText.push(customDataObj.publisher);
-//                            multistringText.push(customDataObj.date);
+                            //                            multistringText.push(customDataObj.date);
                             break;
                         default:
                             for (var prop in customDataObj) {
@@ -378,7 +375,7 @@ var achievementsChart = new Chart(ctx, {
             display: true,
             position: "top",
             labels: {
-//                 usePointStyle: true,
+                //                 usePointStyle: true,
             }
         },
         scales: {
@@ -425,3 +422,63 @@ window.chartColors = {
     greyy: 'rgb(220, 220, 220)',
     indigo: 'rgb(63, 81, 181)'
 };
+
+
+/*
+
+Certificates rendering
+note: apply revealr after this function
+
+*/
+function renderCertificates(obj) {
+    /*{
+           date: "",
+           title:"",
+           organization: "",
+           description: "",
+    }*/
+
+    var items = obj.certificates;
+    var htmlString = "";
+
+    if (items != "" && items.length > 0) {
+
+        htmlString += "<div class=\"wrapper box\">";
+        htmlString += "<ol class=\"timeline revealed\">";
+
+        for (i = 0; i < items.length; i++) {
+
+            // <div class="timeline-counter is-circle"></div>
+            // <div class="timeline-counter is-triangle"></div>
+
+            htmlString += "<li class=\"timeline-item\">";
+            htmlString += "<div class=\"timeline-line\"></div>";
+            if (i == 0) {
+                htmlString += "<div class=\"timeline-counter\"></div>";
+            } else if (i == items.length - 1) {
+                htmlString += "<div class=\"timeline-counter is-triangle\"></div>";
+            } else {
+                htmlString += "<div class=\"timeline-counter is-circle\"></div>";
+            };
+
+            htmlString += "<div class=\"timeline-heading\">" + items[i].date + "</div>";
+            htmlString += "<div class=\"timeline-text\">";
+            htmlString += "<p>" + items[i].title + "</p>";
+            htmlString += "<p>" + items[i].organization + "</p>";
+            htmlString += "</div>";
+            htmlString += "</li>";
+        }
+
+        htmlString += "</ol>";
+        htmlString += "<div class=\"timeline-fader\"></div>";
+        htmlString += "</div>";
+        htmlString += "<button id=\"btnCer\" class=\"timeline-reveal btn btn-default btn-block\">View Full Timeline</button>";
+
+    } else {
+        htmlString += "<p>There is no certificates to display</p>"
+    }
+    document.getElementById("certificatesTimeline").innerHTML = htmlString;
+}
+
+
+

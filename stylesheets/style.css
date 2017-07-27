@@ -304,7 +304,7 @@ Portfolio Section
 }
 
 #portfolio .about-text {
-    margin-left: 10px;
+    margin: 10px;
     text-align: center;
 }
 
@@ -427,13 +427,13 @@ Achievements Section
     #a07371
 */
     /* Old browsers */
-    background: -moz-linear-gradient(top, #bea2e7 0%, #86b7e7 100%);
+    background: -moz-linear-gradient(top, #5f57e7 0%, #58316a 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #bea2e7 0%, #86b7e7 100%);
+    background: -webkit-linear-gradient(top, #5f57e7 0%, #58316a 100%);
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #5f57e7 0%, #58316a 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bea2e7', endColorstr='#86b7e7', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f57e7', endColorstr='#58316a', GradientType=0);
     /* IE6-9 */
     color: #fff;
 }
@@ -452,7 +452,7 @@ Achievements Section
 }
 
 #achievements .about-text {
-    padding-top: 200px;
+    padding-top: 80px;
     text-align: center;
 }
 
@@ -503,7 +503,7 @@ Contact Section
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#643841', endColorstr='#a07371', GradientType=0);
     /* IE6-9 */
-/*    width:100%;*/
+    /*    width:100%;*/
 }
 
 #contact h3 {
@@ -548,4 +548,155 @@ Contact Section
     -ms-transform: scale(1.8);
     -o-transform: scale(1.8);
     transform: scale(1.8);
+}
+
+
+/*
+
+certificates timeline
+
+*/
+
+.timeline-reveal {
+    color: #777;
+    background-color: transparent;
+    border-color: #777;
+    /*    padding: 14px 20px;*/
+    margin: 0;
+    font-size: 12px;
+    border-radius: 0;
+    margin-top: 10px;
+}
+
+.timeline-reveal:hover {
+    /*
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #272C49;
+  cursor: pointer;  
+*/
+}
+
+.timeline-reveal:focus {
+    /*  outline: none;*/
+}
+
+.wrapper {
+    max-height: 300px;
+    overflow: hidden;
+    -webkit-transition: 1000ms max-height ease-in;
+    transition: 1000ms max-height ease-in;
+    position: relative;
+}
+
+.timeline-fader {
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    -webkit-transition: 300ms opacity ease-in;
+    transition: 300ms opacity ease-in;
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #58326E 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #58326E 100%);
+}
+
+.timeline {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+}
+
+.timeline-heading {
+    /*  font-size: 14px;*/
+    /*  font-weight: 700;*/
+    /*  margin-bottom: 2px;*/
+}
+
+.timeline p {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*  font-size: 90%;*/
+    font-weight: 600;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+}
+
+.timeline-item.has-image {
+    padding-bottom: 40px;
+}
+
+.timeline-item.has-image.is-circle img {
+    border-radius: 100%;
+}
+
+.timeline-item.has-image .timeline-counter {
+    border: none;
+    width: 100%;
+    vertical-align: middle;
+    position: relative;
+    top: 0;
+    left: -85px;
+}
+
+.timeline-item.has-image .timeline-counter img {
+    height: auto;
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    max-width: 64px;
+}
+
+.timeline-item.has-image.is-circle .timeline-counter img {
+    height: 64px;
+    width: 64px;
+}
+
+.timeline-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 11px;
+    width: 1px;
+    background-color: rgba(255, 127, 80, 0.7);
+}
+
+.timeline-counter {
+    background-color: rgba(255, 127, 80, 0.7);
+    border: 2px solid orange;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 20px;
+    left: 4px;
+}
+
+.timeline-counter.is-image {
+    background-color: transparent;
+}
+
+.timeline-counter.is-circle {
+    border-radius: 100%;
+}
+
+.timeline-counter.is-triangle {
+    background-color: transparent;
+    border: none;
+    width: 0;
+    height: 0;
+    left: 4px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 12px solid orange;
+}
+
+.timeline-item:first-child .timeline-line {
+    top: 25px;
+}
+
+.timeline-item:last-child .timeline-line {
+    height: 25px;
 }

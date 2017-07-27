@@ -184,11 +184,17 @@ var me = {
             title: "BEST engineering contest - LEM workshop",
             organization: "BEST Sofia",
             description: ""
-        },
+        }, 
         {
             date: "2016-05-12",
             title: "Presentation skills",
             organization: "Forteamconsult Bulgaria",
+            description: ""
+        },
+        {
+            date: "2016-05-26",
+            title: "English language course - A2",
+            organization: "Language Centre Matevi Ltd",
             description: ""
         },
         {
@@ -234,21 +240,15 @@ var me = {
             description: ""
         },
         {
-            date: "2017-03-01",
-            title: "Customizing ASP.NET Authentication with Identity",
-            organization: "Microsoft Virtual Academy",
-            description: ""
-        },
-        {
-            date: "2016-05-26",
-            title: "English language course - A2",
-            organization: "Language Centre Matevi Ltd",
-            description: ""
-        },
-        {
             date: "2017-01-05",
             title: "English language course - B1",
             organization: "Technical University Sofia, language department",
+            description: ""
+        },
+        {
+            date: "2017-03-01",
+            title: "Customizing ASP.NET Authentication with Identity",
+            organization: "Microsoft Virtual Academy",
             description: ""
         },
         {
