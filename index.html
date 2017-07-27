@@ -5,23 +5,28 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>A.Y.</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Atanas Yanev Personal Page">
 
-    <!-- Bootstrap -->
+    <!--    Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u">
+    <!--    font-awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <!--    main styles -->
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+    <!--    nivo lightbox -->
     <link rel="stylesheet" type="text/css" href="stylesheets/nivo-lightbox/nivo-lightbox.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/nivo-lightbox/default.css">
+    <!--    fonts -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.js"></script>
+    <script type="text/javascript" src="scripts/Chart.bundle.js"></script>
     <script type="text/javascript" src="scripts/jquery.1.11.1.js"></script>
+
+    
     <script type="text/javascript" src="scripts/bootstrap.js"></script>
     <script type="text/javascript" src="scripts/SmoothScroll.js"></script>
     <script type="text/javascript" src="scripts/jquery.isotope.js"></script>
+    
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -73,7 +78,7 @@
                 <hr>
             </div>
             <div class="row">
-                <div class="col-md-12 text-center"><img src="images/about.jpg" class="img-responsive"></div>
+                <div class="col-md-12 text-center"><img src="images/about.jpg" class="img-responsive" alt="about"></div>
                 <div class="col-md-8 col-md-offset-2">
                     <div class="about-text">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
@@ -115,20 +120,19 @@
             </div>
             <div class="row">
                 <div class="col-md-4">
-                    <h3>Certificates</h3>
+                    <h3><b>Certificates</b></h3>
                     <p>Chronological path for small piece of my certificates</p>
                     <div id="certificatesTimeline" class="timeline-block">
                     </div>
                 </div>
                 <!--   achievements chart -->
                 <div class="col-md-8">
-                    <h3>A brief description chart which describes my achievements in function of the time</h3>
+                    <h3><b>Achievements Chart</b></h3>
                     <p class="text-right">Note: Try to disable a dataset by clicking legend</p>
                     <div class="box">
                         <canvas id="educationChart"></canvas>
                     </div>
                 </div>
-
             </div>
             <div class="about-text">
                 <a href="#contact" class="btn btn-default btn-lg page-scroll">Contact me</a>
@@ -173,10 +177,11 @@
     </footer>
     <!--    database    -->
     <script type="text/javascript" src="scripts/database.json"></script>
-    <!--    image preview functionality -->
-    <script type="text/javascript" src="scripts/nivo-lightbox.js"></script>
     <!--    core functions -->
     <script type="text/javascript" src="scripts/main.js"></script>
+    <!--    image preview functionality -->
+    <script type="text/javascript" src="scripts/nivo-lightbox.js"></script>
+    
     <!--    add show hide functin to certificates timeline -->
     <script src="scripts/revealr.js"></script>
 
@@ -184,7 +189,7 @@
     <script>
         utilities();
         renderPortfolioItems(portfolio);
-        
+
         window.onload = function() {
             renderCertificates(me);
             // if select class
