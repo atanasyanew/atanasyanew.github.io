@@ -247,7 +247,7 @@ About Section
 }
 
 #about .about-text {
-    margin-left: 10px;
+    margin: 10px;
     text-align: center;
 }
 
@@ -273,7 +273,7 @@ Portfolio Section
 
 #portfolio {
     padding: 120px 0;
-    background: #d2d1cf;
+    background: #dcdcdc;
 }
 
 #portfolio .thumbnail {
@@ -420,20 +420,20 @@ Achievements Section
 */
 
 #achievements {
-    padding: 120px 0;
+    padding: 80px 0;
     /*    background: #72c7e1;*/
     /*
     #643841
     #a07371
 */
     /* Old browsers */
-    background: -moz-linear-gradient(top, #a07371 0%, #72c7e1 100%);
+    background: -moz-linear-gradient(top, #bea2e7 0%, #86b7e7 100%);
     /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #a07371 0%, #72c7e1 100%);
+    background: -webkit-linear-gradient(top, #bea2e7 0%, #86b7e7 100%);
     /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #AD5D5D 0%, #a07371 100%);
+    background: linear-gradient(to bottom, #5f57e7 0%, #58316a 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#72c7e1', endColorstr='#a07371', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bea2e7', endColorstr='#86b7e7', GradientType=0);
     /* IE6-9 */
     color: #fff;
 }
@@ -442,18 +442,34 @@ Achievements Section
     color: #fff;
 }
 
+#achievements h3 {
+    color: #fff;
+    text-align: center;
+}
+
 #achievements hr {
     background: #fff;
 }
 
 #achievements .about-text {
-    margin-left: 10px;
+    padding-top: 200px;
     text-align: center;
 }
 
 #achievements .btn-default {
     color: #fff;
     border-color: #fff;
+}
+
+#achievements .box {
+    /*    padding: 0;*/
+    border-radius: 0;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.19), 2px 2px 10px rgba(0, 0, 0, 0.23);
+}
+
+#achievements canvas {
+    padding: 15px;
 }
 
 #achievements .btn-default:hover,
@@ -476,7 +492,7 @@ Contact Section
 */
 
 #contact {
-    padding: 120px 0;
+    padding: 150px 0;
     background: #a07371;
     /* Old browsers */
     background: -moz-linear-gradient(top, #a07371 0%, #643841 100%);
@@ -487,6 +503,7 @@ Contact Section
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#643841', endColorstr='#a07371', GradientType=0);
     /* IE6-9 */
+/*    width:100%;*/
 }
 
 #contact h3 {

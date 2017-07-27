@@ -101,7 +101,7 @@ var me = {
         },
         {
             startDate: "2010",
-            endDate: "2014-06-01",
+            endDate: "2014-01-01",
             degree: "Bachelor's degree",
             school: "Technical University of Sofia",
             fieldStudy: "Electrical Engineering | Pedagogy"
@@ -260,20 +260,20 @@ var me = {
     ],
     publications: [
         {
-            date: "2013-03-01",
-            tittle: "A graphical representation of the magnitude of short-circuit currents in distribution systems",
+            date: "2013-02-01",
+            title: "A graphical representation of the magnitude of short-circuit currents in distribution systems",
             publisher: "Notifications of the Technical University of Sliven, ISSN 1312-3920",
             authors: "",
         },
         {
-            date: "2016-09-15",
-            tittle: "Simulation Of Sinusoidal Voltage Inverter Using Reducing Switching Losses PWM Strategy",
+            date: "2016-10-15",
+            title: "Simulation Of Sinusoidal Voltage Inverter Using Reducing Switching Losses PWM Strategy",
             publisher: "Advanced Aspects of Theoretical Electrical Engineering Sofia 2016",
             authors: "",
         },
         {
             date: "2017-06-04",
-            tittle: "Simulation Of Three-phase Invertor For Quasi-sinusoidal Voltage",
+            title: "Simulation Of Three-phase Invertor For Quasi-sinusoidal Voltage",
             publisher: "Proceedings of the Technical University of Sofia, Volume 67, Issue 2, 2017",
             authors: "",
         }

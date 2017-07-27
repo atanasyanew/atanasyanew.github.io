@@ -1,69 +1,72 @@
 // page scroll
-function utilities() {(function () {
-   'use strict';
-   
-  	$('a.page-scroll').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top - 40
-            }, 900);
-            return false;
-          }
-        }
-      });
+function utilities() {
+    (function () {
+        'use strict';
 
-	// affix the navbar after scroll below header
-$('#nav').affix({
-      offset: {
-        top: $('header').height()
-      }
-});	
-
-	
-  	// Portfolio isotope filter
-    $(window).load(function() {
-        var $container = $('.portfolio-items');
-        $container.isotope({
-            filter: '*',
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
+        $('a.page-scroll').click(function () {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top - 40
+                    }, 900);
+                    return false;
+                }
             }
         });
-        $('.cat a').click(function() {
-            $('.cat .active').removeClass('active');
-            $(this).addClass('active');
-            var selector = $(this).attr('data-filter');
+
+        // affix the navbar after scroll below header
+        $('#nav').affix({
+            offset: {
+                top: $('header').height()
+            }
+        });
+
+
+        // Portfolio isotope filter
+        $(window).load(function () {
+            var $container = $('.portfolio-items');
             $container.isotope({
-                filter: selector,
+                filter: '*',
                 animationOptions: {
                     duration: 750,
                     easing: 'linear',
                     queue: false
                 }
             });
-            return false;
+            $('.cat a').click(function () {
+                $('.cat .active').removeClass('active');
+                $(this).addClass('active');
+                var selector = $(this).attr('data-filter');
+                $container.isotope({
+                    filter: selector,
+                    animationOptions: {
+                        duration: 750,
+                        easing: 'linear',
+                        queue: false
+                    }
+                });
+                return false;
+            });
+
         });
 
-    });
-	
 
-    // Nivo Lightbox 
-    $('.portfolio-item a').nivoLightbox({
-            effect: 'slideDown',  
-            keyboardNav: true,                            
+        // Nivo Lightbox 
+        $('.portfolio-item a').nivoLightbox({
+            effect: 'slideDown',
+            keyboardNav: true,
         });
- 
 
-}())};
+
+    }())
+};
 utilities();
 
 // render portfolio projects
 var portfolioItems = document.getElementById("portfolioItems");
+
 function renderPortfolioItems(obj) {
 
     let projects = obj.projects;
@@ -137,10 +140,10 @@ function renderChartEducation(obj) {
         showLine: false,
         fill: false,
         // pointStyle: pointStyleImage,
-        backgroundColor: "rgba(246,156,85,0.5)",
-        borderColor: "rgba(246,156,85,0.9)",
+        backgroundColor: "rgba(255, 99, 132,0.5)",
+        borderColor: "rgba(255, 99, 132,0.9)",
         borderWidth: 1.2,
-        pointRadius: 15,
+        pointRadius: 17,
         pointHoverRadius: 18,
         data: []
     }
@@ -180,7 +183,7 @@ function renderChartExperience(obj) {
         backgroundColor: "rgba(75, 192, 192,0.5)",
         borderColor: "rgba(75, 192, 192,0.9)",
         borderWidth: 1.2,
-        pointRadius: 20,
+        pointRadius: 17,
         pointHoverRadius: 18,
         data: []
     }
@@ -265,11 +268,11 @@ function renderChartPublications(obj) {
         showLine: false,
         fill: false,
         // pointStyle: pointStyleImage,
-        backgroundColor: "rgba(54, 162, 235,0.5)",
-        borderColor: "rgba(54, 162, 235,0.9)",
-        borderWidth: 0.8,
-        pointRadius: 8,
-        pointHoverRadius: 10,
+        backgroundColor: "rgba(54, 162, 235, 0.5)",
+        borderColor: "rgba(54, 162, 235, 0.9)",
+        borderWidth: 1.2,
+        pointRadius: 17,
+        pointHoverRadius: 18,
         data: []
     }
 
@@ -278,9 +281,13 @@ function renderChartPublications(obj) {
         dataPoint.x = new Date(pbl[i].date);
         dataPoint.y = new Date(pbl[i].date).getFullYear() - born;
         //console.log("x: " + dataPoint.x + " y: " + dataPoint.y);
+        //        date
+        //        title
+        //        publisher
+        //        authors
         dataPoint.title = pbl[i].title;
-        dataPoint.organization = pbl[i].organization;
-        dataPoint.description = pbl[i].description;
+        dataPoint.publisher = pbl[i].publisher;
+        dataPoint.authors = pbl[i].authors;
         dataset.data.push(dataPoint);
 
     }
@@ -294,14 +301,18 @@ var achievementsChart = new Chart(ctx, {
     type: 'line',
     data: {
         datasets: [
-            renderChartExperience(me), renderChartEducation(me),
-            renderChartCertificates(me), renderChartPublications(me)
+            renderChartExperience(me), renderChartEducation(me), renderChartPublications(me)
+           // renderChartCertificates(me),
         ]
     },
     options: {
         responsive: true,
         animation: {
             duration: 3000,
+        },
+        title: {
+//            display: true,
+//            text: "Age of Time"
         },
         tooltips: {
             mode: 'single', // this is the Chart.js default, no need to set
@@ -332,12 +343,31 @@ var achievementsChart = new Chart(ctx, {
                             multistringText.push(customDataObj.school);
                             multistringText.push(customDataObj.fieldStudy);
                             break;
+                        case "Experience":
+                            //            company: "EVN Bulgaria",
+                            //            title: "Intern",
+                            //            from: "2013-06-01",
+                            //            to: "2013-09-01",
+                            //            duration: "3 months",
+                            //            description: ""
+                            multistringText.push(customDataObj.company);
+                            multistringText.push(customDataObj.title);
+                            multistringText.push(customDataObj.duration);
+                            break;
+                        case "Publications":
+                            // date: "2013-02-01",
+                            // title: "A graphical representation of the magnitude of short-circuit currents in distribution systems",
+                            // publisher: "Notifications of the Technical University of Sliven, ISSN 1312-3920",
+                            // authors: "",
+                            multistringText.push(customDataObj.title);
+                            multistringText.push(customDataObj.publisher);
+//                            multistringText.push(customDataObj.date);
+                            break;
                         default:
                             for (var prop in customDataObj) {
                                 props = prop + ": " + customDataObj[prop];
                                 multistringText.push(props);
                             }
-
                     }
 
                     return multistringText;
@@ -346,10 +376,9 @@ var achievementsChart = new Chart(ctx, {
         },
         legend: {
             display: true,
-            position: "right",
-            usePointStyle: true,
+            position: "top",
             labels: {
-               // usePointStyle: true,
+//                 usePointStyle: true,
             }
         },
         scales: {
@@ -357,9 +386,7 @@ var achievementsChart = new Chart(ctx, {
                 type: 'time',
                 display: true,
                 position: 'bottom',
-                ticks: {
-                    // stepSize: 1
-                },
+                ticks: {},
                 gridLines: {
                     display: false
                 },
@@ -367,7 +394,7 @@ var achievementsChart = new Chart(ctx, {
                     displayFormats: {
                         "year": "YYYY"
                     },
-                    tooltipFormat: "YYYY-MM-DD",
+                    tooltipFormat: "YYYY",
                     unit: "year",
                 },
             }],

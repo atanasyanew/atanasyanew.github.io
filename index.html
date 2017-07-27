@@ -9,8 +9,7 @@
     <meta name="author" content="">
 
     <!-- Bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous" rel="stylesheet"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
@@ -41,7 +40,7 @@
             </div>
         </div>
     </header>
-    
+
     <!-- Navigation -->
     <div id="nav">
         <nav class="navbar navbar-custom">
@@ -53,7 +52,9 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse navbar-main-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="hidden"><a href="#page-top"></a></li>
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
                         <li> <a class="page-scroll" href="#about">About</a> </li>
                         <li> <a class="page-scroll" href="#portfolio">Portfolio</a> </li>
                         <li> <a class="page-scroll" href="#achievements">Achievements</a> </li>
@@ -75,12 +76,9 @@
                 <div class="col-md-12 text-center"><img src="images/about.jpg" class="img-responsive"></div>
                 <div class="col-md-8 col-md-offset-2">
                     <div class="about-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
-                            commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo
-                            nibh.
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare diam commodo nibh.
                         </p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed
-                            commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam. Sed commodo nibh ante facilisis bibendum dolor feugiat at. Duis sed dapibus leo nec ornare.</p>
                         <a href="#portfolio" class="btn btn-default btn-lg page-scroll">My Portfolio</a>
                     </div>
                 </div>
@@ -116,13 +114,29 @@
                 <hr>
             </div>
             <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <p>Note: Try to disable a dataset by clicking legend</p>
-                    <canvas id="educationChart"></canvas>
-                    <br>
-                    <div class="about-text">
-                        <a href="#contact" class="btn btn-default btn-lg page-scroll">Contact me</a>
+                <div class="col-md-4">
+                    <h3>Certificates</h3>
+                    <div class="box">
+                        <ul>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+                            <li>1</li>
+
+                        </ul>
                     </div>
+                </div>
+                <div class="col-md-8">
+                    <h3>A brief description chart which describes my achievements in function of the time</h3>
+                    <p class="text-right">Note: Try to disable a dataset by clicking legend</p>
+                    <div class="box">
+                        <canvas id="educationChart"></canvas>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <a href="#contact" class="btn btn-default btn-lg page-scroll">Contact me</a>
                 </div>
             </div>
         </div>
@@ -163,7 +177,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script type="text/javascript" src="scripts/database.json"></script>
     <script type="text/javascript" src="scripts/nivo-lightbox.js"></script>
     <script type="text/javascript" src="scripts/main.js"></script>
