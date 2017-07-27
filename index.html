@@ -128,11 +128,11 @@
                         <canvas id="educationChart"></canvas>
                     </div>
                 </div>
-                
+
             </div>
             <div class="about-text">
-                    <a href="#contact" class="btn btn-default btn-lg page-scroll">Contact me</a>
-                </div>
+                <a href="#contact" class="btn btn-default btn-lg page-scroll">Contact me</a>
+            </div>
         </div>
     </div>
 
@@ -182,15 +182,14 @@
 
 
     <script>
+        utilities();
+        renderPortfolioItems(portfolio);
+        
         window.onload = function() {
-            utilities();
-            renderPortfolioItems(portfolio);
             renderCertificates(me);
             // if select class
             // revealr.init('.timeline-reveal');
             revealr.init('btnCer');
-
-
         };
 
     </script>
