@@ -8,25 +8,23 @@
     <meta name="description" content="Atanas Yanev Personal Page">
 
     <!--    Bootstrap -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u">
-    <!--    font-awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--    Font awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--    main styles -->
+    <!--    My Styles -->
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
     <!--    nivo lightbox -->
     <link rel="stylesheet" type="text/css" href="stylesheets/nivo-lightbox/nivo-lightbox.css">
     <link rel="stylesheet" type="text/css" href="stylesheets/nivo-lightbox/default.css">
-    <!--    fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
-
+    <!--    Chart JS -->
     <script type="text/javascript" src="scripts/Chart.bundle.js"></script>
+    <!--    jQuery -->
     <script type="text/javascript" src="scripts/jquery.1.11.1.js"></script>
-
-    
+    <!--    Bootstrap JS -->
     <script type="text/javascript" src="scripts/bootstrap.js"></script>
-    <script type="text/javascript" src="scripts/SmoothScroll.js"></script>
+    <!--    Isotope -->
     <script type="text/javascript" src="scripts/jquery.isotope.js"></script>
-    
+
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -175,29 +173,36 @@
             </div>
         </div>
     </footer>
-    <!--    database    -->
+
+<!--    image preview functionality -->
+    <script type="text/javascript" src="scripts/nivo-lightbox.js"></script>
+     <!--    database    -->
     <script type="text/javascript" src="scripts/database.json"></script>
     <!--    core functions -->
     <script type="text/javascript" src="scripts/main.js"></script>
-    <!--    image preview functionality -->
-    <script type="text/javascript" src="scripts/nivo-lightbox.js"></script>
     
     <!--    add show hide functin to certificates timeline -->
     <script src="scripts/revealr.js"></script>
-
+    <script type="text/javascript" src="scripts/main.js"></script>
 
     <script>
-        utilities();
-        renderPortfolioItems(portfolio);
-
-        window.onload = function() {
-            renderCertificates(me);
-            // if select class
-            // revealr.init('.timeline-reveal');
-            revealr.init('btnCer');
-        };
+        
+        main();
+//        utilities();
+//        renderPortfolioItems(portfolio);
+//
+//        
+//        
+//        window.onload = function() {
+//            renderCertificates(me);
+//            // if select class
+//            // revealr.init('.timeline-reveal');
+//            revealr.init('btnCer');
+//        };
 
     </script>
+    
+    
 </body>
 
 </html>

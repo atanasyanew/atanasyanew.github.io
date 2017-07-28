@@ -330,7 +330,7 @@ Portfolio Section
 }
 
 .isotope .isotope-item {
-    /*     change duration value to whatever you like */
+/*         change duration value to whatever you like */
     -webkit-transition-duration: 0.8s;
     -moz-transition-duration: 0.8s;
     transition-duration: 0.8s;
@@ -666,7 +666,7 @@ certificates timeline
 
 .timeline-counter {
     background-color: rgba(255, 127, 80, 0.7);
-    border: 2px solid orange;
+    border: 2px solid #ffa500;
     height: 15px;
     width: 15px;
     position: absolute;
@@ -690,7 +690,7 @@ certificates timeline
     left: 4px;
     border-left: 7px solid transparent;
     border-right: 7px solid transparent;
-    border-bottom: 12px solid orange;
+    border-bottom: 12px solid #ffa500;
 }
 
 .timeline-item:first-child .timeline-line {
