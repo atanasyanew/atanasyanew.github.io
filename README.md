@@ -1,3 +1,6 @@
-# Personal Portfolio Theme
+Personal Portfolio
+======
 
-This is my personal portfolio theme repository.
+### Description
+My personal portfolio page repository.
+https://atanasyanew.github.io
