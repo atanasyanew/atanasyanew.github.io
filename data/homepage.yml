@@ -1,0 +1,65 @@
+---
+banner:
+  title: A. Yanev
+social:
+  twitter: ""
+  linkedin: ayanew
+  github: atanasyanew
+  gitlab: ""
+  facebook: ""
+  instagram: ""
+  gmail: atanas.yanew
+  medium: atanas.yanew
+  thingiverse: ayanev
+about:
+  enable: true
+  content: Software engineer, PhD student, avid in IoT and home automation, knowledge gaining as way of life.
+  button:
+    btnText: contributions
+    URL: "/portfolio/contributions"
+skill:
+  enable: false
+  item:
+    # - title: JavaScript
+    #   logo: https://res.cloudinary.com/samrobbins/image/upload/v1591793272/logos/logos_javascript_adj1dx.svg
+    #   description: Details coming soon, contact me if you want to know more
+experience:
+  enable: false
+  item:
+    # - logo: 
+    #   title: 
+    #   company: 
+    #   duration: 
+hackathons:
+  enable: false
+  item:
+    # - title: 
+    #   description: 
+    #   image: 
+    #   url: none
+certifications:
+  enable: false
+  item:
+    # - title: Microsoft Azure Fundamentals
+    #   image: 
+    #   url: https://www.youracclaim.com/badges/b4cf7a86-eb83-478e-bfd0-9f427c3474a0/public_url
+education:
+  enable: false
+  item:
+    - title: Master's degree, Computer Science
+      year: 2017
+      academy: Jönköping University
+      image: https://raw.githubusercontent.com/atanasyanew/Jonkoping-University/master/docs/ju_logo.png
+leadership:
+  enable: false
+  item:
+    # - logo: 
+    #   title: Young Leader
+    #   company: The Scout Association
+    #   duration: September 2014 - July 2018
+portfolio:
+  filter:
+    - label: Web Dev
+      value: web-dev
+    - label: Contributions
+      value: contributions

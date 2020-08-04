@@ -1,0 +1,23 @@
+# Hugo default output directory
+/public
+
+# Hugo stuff
+hugo_extended_0.74.3_Windows-64bit
+hugo.exe
+/resources
+
+## OS Files
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# OSX
+.DS_Store
+
+.vscode
+public
+
+# Notes
+# TODO.md
