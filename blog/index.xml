@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blog on A. Yanev</title>
+    <link>https://ayanev.eu/blog/</link>
+    <description>Recent content in Blog on A. Yanev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 02 Aug 2020 09:10:41 +0000</lastBuildDate>
+    
+	<atom:link href="https://ayanev.eu/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Typography</title>
+      <link>https://ayanev.eu/blog/typography/</link>
+      <pubDate>Sun, 02 Aug 2020 09:10:41 +0000</pubDate>
+      
+      <guid>https://ayanev.eu/blog/typography/</guid>
+      <description>Table of content - Typography  Table of content - Typography Heading 2  Heading 3  Heading 4  Heading 5  Heading 6         Text Ordered List Unordered List Blockquote Tables  Footnotes   Images Code  Inline code   Diagrams Embedding  Twitter YouTube Vimeo GitHub Gist    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis explicabo nam commodi eos cumque possimus error cupiditate iste doloribus aut porro, beatae impedit, corporis sapiente laudantium id voluptatem sit distinctio sed sequi accusantium molestias, facilis sunt eum?</description>
+    </item>
+    
+  </channel>
+</rss>

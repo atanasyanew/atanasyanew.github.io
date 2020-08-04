@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<style>
+    html {
+        height: 100vh;
+    }
+    body {
+        min-height: 100vh;
+        display: grid;
+        grid-template-rows: 1fr auto;
+    }
+    .footer {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+</style>
+<html lang="en-US"><head>
+  <meta charset="utf-8">
+  <title>A. Yanev</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <meta name="description" property="og:description" content="Overview of my contribution as part of different organizations">
+  <meta name="image" property="og:image" content="/">
+  <meta name="author" content="A. Yanev">
+  <meta name="generator" content="Hugo 0.64.0" />
+
+  <!-- plugins -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css ">
+  
+
+  <!-- Main Stylesheet -->
+  
+  <link rel="stylesheet" href="/css/style.min.css" integrity="" media="screen">
+  
+  <link rel="stylesheet" href="/css/syntax.min.css" integrity="" media="screen">
+
+  <!--Favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/ay-logo-200x200-white.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/ay-logo-200x200-white.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/ay-logo-200x200-white.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body class="portfolio">
+    <div class="wrapper">
+<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar">
+   
+    <nav class="uk-navbar-container uk-margin" uk-navbar="mode: click;" style="padding-right: 3rem">
+
+        <div class="uk-navbar-right">
+
+            <ul class="uk-navbar-nav uk-visible@s">
+
+                
+                    <li><a style="font-size: 18px; text-transform: none" href="/"> Home </a></li>
+                
+
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <li><a style="font-size: 18px; text-transform: none" href="/about">About</a></li>
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <li><a style="font-size: 18px; text-transform: none" href="/blog">Blog</a></li>
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <li class="uk-active"><a style="font-size: 18px; text-transform:none" href="/portfolio">Portfolio</a></li>
+                    
+                
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                        <li><a style="font-size: 18px; text-transform: none" href="/contact">Contact</a></li>
+                    
+                
+            </ul>
+
+            <a class="uk-navbar-toggle uk-hidden@s" uk-toggle="target: #sidenav" uk-navbar-toggle-icon href="#"></a>
+
+        </div>
+    </nav>
+</div>
+
+<div id="sidenav" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            
+                <li><a style="font-size: 18px" href="https://ayanev.eu"> Home </a></li>
+            
+
+            
+                
+                
+                
+                
+                
+                
+                
+                    <li><a style="font-size: 18px" href="/about">About</a></li>
+                
+            
+                
+                
+                
+                
+                
+                
+                
+                    <li><a style="font-size: 18px" href="/blog">Blog</a></li>
+                
+            
+                
+                
+                
+                
+                
+                
+                
+                    <li class="uk-active"><a style="font-size: 18px" href="/portfolio">Portfolio</a></li>
+                
+            
+                
+                
+                
+                
+                
+                
+                
+                    <li><a style="font-size: 18px" href="/contact">Contact</a></li>
+                
+            
+        </ul>
+
+    </div>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-135269393-5', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+<style>
+  p {
+    margin: 0
+  }
+
+  .people-wrap {
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .people-image {
+    display: block;
+    border-radius: 50%;
+     
+  }
+
+  .people {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .name {
+    margin: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #000;
+    font-family: Roboto, sans-serif;
+    line-height: 1.2;
+    margin-top: 2rem;
+  }
+
+  .content img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:30px;
+  }
+
+  p { margin-bottom: 1em; }
+
+  body p:last-child { margin-bottom: 0em; }
+
+  img.skills{
+    height: 80px;
+  }
+
+  @media only screen and (min-width: 960px) {
+    .content img{max-width:60vw; max-height:60vh}
+
+  .content img{
+      max-width:60vw;
+      max-height:60vh
+  }
+  }
+  .content{
+      width: 90vw;
+      max-width: 1200px
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+</style>
+
+
+<section>
+  <div class="uk-container uk-margin-large-bottom uk-margin-medium-top">
+    <h1 class="uk-text-center uk-heading-medium">Contributions</h1>
+    <p class="uk-text-center uk-text-lead">Overview of my contribution as part of different organizations</p>
+    <p class="uk-text-center">Published on Aug 02, 2020</p>
+    <p class="uk-text-center">Reading time: 5 minutes.</p>
+    
+
+    <div class="uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center uk-flex-center uk-grid-large uk-margin-small-top" uk-grid>
+      
+
+      <div>
+        
+      </div>
+    </div>
+    
+
+    <hr class="full-width">
+    
+
+    <div class="content">
+      <p>Overview of my contribution as part of different organizations.</p>
+<!--v-->
+<h2 id="toc">ToC</h2>
+<ul>
+<li><a href="#toc">ToC</a></li>
+<li><a href="#recommendit---signify">RecommendIT - Signify</a></li>
+<li><a href="#recommendit---heidelbergcement">RecommendIT - HeidelbergCement</a></li>
+<li><a href="#itg-ecotech">ITG EcoTech</a></li>
+<li><a href="#orbix">Orbix</a></li>
+<li><a href="#central-registrar-aubg">Central registrar AUBG</a></li>
+<li><a href="#hhib">HHIB</a></li>
+<li><a href="#poc">PoC</a>
+<ul>
+<li><a href="#cxg-mystery-shopping-platform">CXG Mystery shopping platform</a></li>
+<li><a href="#poc-vsto-outlook-plugin">(PoC) VSTO Outlook plugin</a></li>
+<li><a href="#poc-survey-builder-application">(PoC) Survey builder application</a></li>
+</ul>
+</li>
+<li><a href="#others">Others</a>
+<ul>
+<li><a href="#fish-farm-automation">Fish farm automation</a></li>
+<li><a href="#medical-device-data-collector">Medical device, data collector</a></li>
+</ul>
+</li>
+</ul>
+<!-- ### Template, content organize for each slide
+
+- Project name
+  - Description - short about the project business logic
+  - Spend - for example:
+    - less than month
+    - about a month
+    - few months (less than half year)
+    - less than year
+    - about a year
+    - more than year
+  - Technologies - just key technologies such as .NET C# EF Code-first
+  - Notes - side notes about the technological part, example: Monolithic application -->
+<!--s-->
+<h2 id="recommendit---signifyhttpswwwgooglecomsearchqsignify">RecommendIT - <a href="https://www.google.com/search?q=Signify">Signify</a></h2>
+<p><strong>Description</strong> - Customer experience platform with additional analytics.</p>
+<p>The company that use the software is the biggest smart lighting seller.
+The developed platform has multiple hosted instances around the world.</p>
+<p><strong>Spend</strong> - more than year</p>
+<p><strong>Technologies</strong> - <code>.NET Ecosystem</code>, <code>ELK Stack</code>, <code>ETL</code>, <code>MVC</code>, <code>AngularJS</code>, <code>KendоUI MVC</code>, etc..</p>
+<p><strong>Notes</strong> - There are two <code>n-layer</code> monolithic applications, also known as Functional and Dashboard.
+Both of them use serval different repositories.
+The related repositories are organized with <code>git submodules</code>, <code>NuGet packages</code> build and referenced for release use across the repositories. <code>SQL Database</code> is used for data persistence, while the <code>ElasticSearch</code> is main service retrieving data for the visualization modules.
+A complex <code>ETL</code> developed in order to fill the indices, data such as survey results, <code>scraped data</code> (reviews, ratings, etc..) and many other sources.
+The project is hard to explain due its business logic complexity and many provided features.</p>
+<hr>
+<!--s-->
+<h2 id="recommendit---heidelbergcementhttpswwwgooglecomsearchqheidelbergcement">RecommendIT - <a href="https://www.google.com/search?q=HeidelbergCement">HeidelbergCement</a></h2>
+<p><strong>Description</strong> - Customer experience platform.</p>
+<p><strong>Spend</strong> - about a year</p>
+<p><strong>Technologies</strong> - <code>.NET Ecosystem</code>, <code>ELK Stack</code>, <code>ETL</code>, <code>MVC</code>, <code>AngularJS</code>, <code>KendоUI MVC</code>, etc..</p>
+<p><strong>Notes</strong> - <code>N-layer monolithic application</code>, developed in <code>.NET Ecosystem</code>.
+<code>SQL Database</code> is used for data storage, <code>ElasticSearch</code> provided also.
+The developed software it self is CRM, ERP system with many features and complex business logic.</p>
+<hr>
+<!--s-->
+<h2 id="itg-ecotech">ITG EcoTech</h2>
+<p><strong>Description</strong> - Innovative vertical Wind turbine with smart capabilities.</p>
+<p><strong>Spend</strong> - few months</p>
+<p><strong>Technologies</strong> - <code>.NET Core</code>, <code>Code first</code>, <code>identity server</code>, <code>MQTT</code>, <code>REST API</code>, <code>Embedded controllers</code> and <code>hardware</code>, etc..</p>
+<p><strong>Notes</strong> - The project consist of 3 parts, server side, client side, MCU controller.
+The server side code is <code>n-layer</code> monolithic <code>.NET Core</code> application with <code>SQL</code> database storage.
+Front end of the application is build with <code>Angular</code>.
+The server side and <code>MCU</code> communication is done with <code>MQTT</code> and HTTP.
+The application used to control and monitoring the wind turbine and the surrounding environment.
+The software also provides a way for integrating with other applications/servers.
+Historical data persisted for <code>analytics</code>, control and <code>prediction</code> purposes, data such as energy production/usage, wind speed and direction.
+Automatic and manual operation modes with <code>suggestions</code> based on the collected data.</p>
+<hr>
+<!--s-->
+<h2 id="orbix">Orbix</h2>
+<p><strong>Description</strong> - Envisioned as a platform aiming to provide fast, simple and cost-effective way for cross-border remittances.
+Users are able to transfer the platform-specific currency (tokens) to any other user with instant pay-in and pay-out options.
+Tokens are linked to the Euro, so at all times 1 token is equal to 1 EUR.
+In order to provide transparency and trust, platform leverage an immutable and publicly auditable transaction and storage system.</p>
+<p><strong>Spend</strong> - few months <!-- 2018.05 - 2018.09 --></p>
+<p><strong>Technologies</strong> - <code>Microservices</code>, <code>Docker</code>, <code>Apache Kafka</code>, <code>Node.js</code>, <code>TypeScript</code>, <code>Express.js</code>, <code>MongoDB</code>, <code>KYC</code>,  <code>payment providers</code>, <code>Hyperledger</code>, etc..</p>
+<p><strong>Notes</strong> - The server side of the application has <code>microservice</code> architecture, communication done by <code>Apache Kafka</code>.
+Clients such as WEB and Mobile use <code>REST API</code> microservice as <code>gateway</code> to the application features.
+I&rsquo;v contribute for the PoC stage of the application, mainly worked on UMS (user management service) and payment service.
+The user management microservice take care about registrations, <code>multi-factor authentication</code>, integration with <code>KYC providers</code> (Know Your Customer) such as <code>Onfido</code> and <code>4Stop</code> etc..
+The payment microservice uses providers such as <code>PayPal</code> and <code>Stripe</code>.
+Both are developed on  <code>NodeJS</code> with <code>TypeScript</code>, <code>MongoDB</code> as a storage, <code>state machines</code> developed for the business logic behind.</p>
+<hr>
+<!--s-->
+<h2 id="central-registrar-aubg">Central registrar AUBG</h2>
+<p><strong>Description</strong> - A student registration system for American University.</p>
+<p><strong>Spend</strong> - less than year <!-- 2017-2018 --></p>
+<p><strong>Technologies</strong> - <code>.NET Web API</code>, <code>MVC</code>, <code>MSSQL</code>, <code>Code First</code>, <code>GitLab CI/CD</code>, <code>Unit tests</code>, etc..</p>
+<p>Notes - The application consist in two parts, client and server-side code.
+Client side developed on <code>Angular 5+</code>.
+The server-side part of the application developed on the <code>.NET Framework</code> ecosystem.
+Architecture of the application is <code>monolithic</code> <code>n-layer</code>, <code>MVC</code> pattern.
+Application was first developed as <code>Database First</code> using <code>stored procedures</code>, but later on we decide to migrate <code>Code first</code>.</p>
+<hr>
+<!--s-->
+<h2 id="hhib">HHIB</h2>
+<p><strong>Description</strong> - Content management system for &ldquo;Tap Changers&rdquo; division.</p>
+<p><strong>Spend</strong> - less than year <!-- 2016 --></p>
+<p><strong>Technologies</strong> - <code>PhP</code>, <code>MySQL</code>, <code>JavaScript</code>, <code>Bootstrap</code>, <code>W3.css</code>, <code>W3.js</code></p>
+<p><strong>Notes</strong> - The application is designed to store information, files and monitoring the process for creating internal company orders and offers.
+Application has features like: file upload, role based users, order and offers progress tracking, approval statuses, reports and MS Excel integration.</p>
+<p>Since this was my entry point in developing without anyone guiding me, I&rsquo;m not very proud with the code, but with the results - application is still in use.
+More details - <a href="https://github.com/atanasyanew/HHIB">github.com/atanasyanew/HHIB</a></p>
+<hr>
+<!--s-->
+<h2 id="poc">PoC</h2>
+<p>Proof of concept applications, that I have been done and some other projects with time spend for about a month.</p>
+<!--v-->
+<h3 id="cxg-mystery-shopping-platform">CXG Mystery shopping platform</h3>
+<p><strong>Description</strong> - Mystery shopping platform.</p>
+<p><strong>Spend</strong> - about a month</p>
+<p><strong>Technologies</strong> - <code>.NET Ecosystem</code>, <code>.NET Core</code>, <code>Code first</code>, <code>ELK stack</code>, <code>ETL</code>, <code>PostgreSQL</code></p>
+<p><strong>Notes</strong> -  creating missions, feedback, reporting etc..</p>
+<hr>
+<!--v-->
+<h3 id="poc-vsto-outlook-plugin">(PoC) VSTO Outlook plugin</h3>
+<p><strong>Description</strong> - Send secure addon for Outlook.</p>
+<p><strong>Technologies</strong> - <code>VSTO Add-in</code>, <code>.NET Ecosystem</code></p>
+<!--v-->
+<h3 id="poc-survey-builder-application">(PoC) Survey builder application</h3>
+<p><strong>Description</strong> - Survey builder application.</p>
+<p><strong>Technologies</strong> - <code>MEAN Stack</code>, <code>Express.js</code>, <code>AngularJS</code>, and <code>Node.js</code></p>
+<hr>
+<h2 id="others">Others</h2>
+<h3 id="fish-farm-automation">Fish farm automation</h3>
+<p><strong>Description</strong> - Automation for Fish farm.</p>
+<p><strong>Spend</strong> - about a month</p>
+<p><strong>Technologies</strong> - <code>NodeJS</code>, <code>Node-RED</code>, <code>InfluxDB</code>, <code>Grafana</code>, <code>Telegram</code>, <code>Telegraf</code>, <code>MQTT</code>, <code>Linux</code>, <code>Raspberry Pi</code></p>
+<p><strong>Notes</strong> - The project aim to provide end to end solution for control and monitoring fish farms. The solution can be separated in two parts - server side and mcu part. The farm consist of N number of fish tanks. The MCU controller interact with variety of different sensors and devices to control. MCU and linux server communication handled by <code>MQTT</code>. The server stores data in <code>time series database</code>, visualizations are provided by <code>Grafana</code>. <code>Node-RED</code> used for managing the business logic and providing the user interface for the end client to interact with. Metrics for monitoring the server are collected with <code>Telegraf</code>. The solutions provides a way for configuring alerts/warnings when thresholds are reached, notifications send by <code>Telegram</code>.</p>
+<h3 id="medical-device-data-collector">Medical device, data collector</h3>
+<p><strong>Description</strong> - Device that collects metrics and send them to decentralize system.</p>
+<p><strong>Spend</strong> - about a month</p>
+<p><strong>Technologies</strong> - <code>hardware</code>, <code>MCU</code>, <code>Qt</code>, <code>.NET Core</code>, <code>Azure IoT Hub</code>, <code>Buildroot</code></p>
+<p><strong>Notes</strong> - Device that collect metrics from different medical apparatuses that implements bluetooth protocol for medical use.
+The device has a custom made <code>hardware</code> (PCB, touchscreen).
+Data is collected from apparatuses such as BPSystolic, BPDiastolic, Pulse, BloodSugar and others, after collection process is done, metrics are pushed to <code>Azure IoT Hub</code> where data is stored/processed.</p>
+
+    </div>
+  </div>
+  </div>
+</section>
+
+
+
+    </div>
+
+
+
+<!-- JS Plugins -->
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>

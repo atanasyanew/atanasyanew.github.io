@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>contributions on A. Yanev</title>
+    <link>https://ayanev.eu/categories/contributions/</link>
+    <description>Recent content in contributions on A. Yanev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 02 Aug 2020 09:10:41 +0000</lastBuildDate>
+    
+	<atom:link href="https://ayanev.eu/categories/contributions/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Contributions</title>
+      <link>https://ayanev.eu/portfolio/contributions/</link>
+      <pubDate>Sun, 02 Aug 2020 09:10:41 +0000</pubDate>
+      
+      <guid>https://ayanev.eu/portfolio/contributions/</guid>
+      <description>Overview of my contribution as part of different organizations.
+ ToC  ToC RecommendIT - Signify RecommendIT - HeidelbergCement ITG EcoTech Orbix Central registrar AUBG HHIB PoC  CXG Mystery shopping platform (PoC) VSTO Outlook plugin (PoC) Survey builder application   Others  Fish farm automation Medical device, data collector     RecommendIT - Signify Description - Customer experience platform with additional analytics.
+The company that use the software is the biggest smart lighting seller.</description>
+    </item>
+    
+  </channel>
+</rss>

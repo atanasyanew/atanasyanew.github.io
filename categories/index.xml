@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on A. Yanev</title>
+    <link>https://ayanev.eu/categories/</link>
+    <description>Recent content in Categories on A. Yanev</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sun, 02 Aug 2020 09:10:41 +0000</lastBuildDate>
+    
+	<atom:link href="https://ayanev.eu/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>contributions</title>
+      <link>https://ayanev.eu/categories/contributions/</link>
+      <pubDate>Sun, 02 Aug 2020 09:10:41 +0000</pubDate>
+      
+      <guid>https://ayanev.eu/categories/contributions/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

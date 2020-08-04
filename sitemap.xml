@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://ayanev.eu/</loc>
+    <lastmod>2020-08-02T09:10:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ayanev.eu/about/</loc>
+    <lastmod>2020-08-02T09:10:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ayanev.eu/blog/</loc>
+    <lastmod>2020-08-02T09:10:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ayanev.eu/categories/</loc>
+    <lastmod>2020-08-02T09:10:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ayanev.eu/contact/</loc>
+    <lastmod>2020-08-02T09:10:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ayanev.eu/portfolio/contributions/</loc>
+    <lastmod>2020-08-02T09:10:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ayanev.eu/categories/contributions/</loc>
+    <lastmod>2020-08-02T09:10:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ayanev.eu/blog/typography/</loc>
+    <lastmod>2020-08-02T09:10:41+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ayanev.eu/portfolio/</loc>
+    <lastmod>2019-05-12T12:14:34+06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ayanev.eu/tags/</loc>
+  </url>
+  
+</urlset>
