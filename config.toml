@@ -48,9 +48,12 @@ home = "Home"
 # Meta data
 description = "A. Yanev personal page"
 author = "A. Yanev"
+  
+  [params.nav]
+  enable = false
 
   [params.contact]
-  enable = true
+  enable = false
   formAction = "" #contact form works with formspree.io
 
   [params.footer]
